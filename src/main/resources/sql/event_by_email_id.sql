@@ -1,0 +1,23 @@
+SELECT
+    `Events`.`event_id`,
+    `Events`.`event_name`,
+    `Events`.`event_type`,
+    `Events`.`event_date`,
+    `Events`.`event_time`,
+    `Events`.`venue_name`,
+    `Events`.`capacity`,
+    `Events`.`create_ts`,
+    `Events`.`update_ts`,
+    `Events`.`price`,
+    `Events`.`city`,
+    `Events`.`state`,
+    `Events`.`contact_number`,
+    `Events`.`venue_type`,
+    `Events`.`description`,
+    `Events`.`event_email_address`,
+    `Events`.`customer_id`,
+    `Events`.`user_email`
+FROM
+    `EventExplorer`.`Events`
+WHERE
+    `Events`.`user_email` = 'example@gmail.com';
